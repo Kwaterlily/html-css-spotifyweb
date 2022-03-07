@@ -1,0 +1,72 @@
+/* general */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.debug{
+    border: solid 2px red;
+}
+
+body {
+    background-color: #141922;
+    color: white;
+}
+
+.wrapper {
+    height: 100vh;
+    width: 100%;
+}
+
+.wrapper-content{
+    width: 100%;
+    height: calc(100% - 90px);
+    background-color: #141922;
+    display: flex;
+}
+
+aside{
+    width: 230px;
+    background-color: #000000;
+}
+
+main{
+    width: calc(100% - 230px);
+    background-color: #141922;
+}
+
+nav.top {
+    width: 100%;
+    height: 90px;
+    position: fixed;
+    z-index: 1000;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+footer{
+    height: 90px;
+    width: 100%;
+    background-color: #282828;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    flex-direction:row;
+    justify-content: space-between;
+    gap: 3%;
+    z-index: 1000;
+    overflow: hidden;
+}
+.left-player-bar{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+.play-bar{
+    display: flex;
+    align-items:center;
+}
+.right-player-bar{
+    height: 100%;
+    display: flex;
+}
