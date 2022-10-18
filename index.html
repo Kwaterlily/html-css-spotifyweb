@@ -1,218 +1,296 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="css/style.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Open+Sans:wght@600;700;800&display=swap" rel="stylesheet">  
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <meta name='viewport' content='width=device-width, initial-scale=1'>
-<script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
-        <title>spotify</title>
-    </head>
-    <body>
-         <!-- menu laterale -->
-         <aside>
-            <div class="logo-desktop">
-                <img src="img/logo.svg" alt="logo esteso">
-            </div>
-            <div >
-                <ul class="">
-                    <li class="icon"><img src="img/home.svg" alt="home"><span>Home</span></li>
-                    <li class="icon"><img src="img/search.svg" alt="search">Cerca</li>
-                    <li class="icon"><img src="img/libreria.svg" alt="library">La tua libreria</li>
-                </ul>
-            </div>
-            <div>
-                <ul class="">
-                    <span class="uppercase-text">Playlist</span>
-                    <!-- class="icon"><img src="img/plus.svg" alt="plus" -->
-                    <li >Crea playlist</li>
-                    <li>Nuova Playlist</li>
-                    <li>Nuova Playlist</li>
-                    <li>Nuova Playlist</li>
-                    <li>Nuova Playlist</li>
-                    <li>Nuova Playlist</li>
-                    <li>Nuova Playlist</li>
-                    <li>Nuova Playlist</li>
-                    <div class="installa-App">
-                        <img class="icon-download " src="img/download.svg" alt="">
-                        <span>Installa App</span>
-                    </div>
-                </ul>
-            </div>
-        </aside>
-        <!-- /menu laterale -->
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Gianluca Mura">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Stylesheet -->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <title>Spotify Web</title>
+</head>
+<body>
+    <main>
+        <!-- Main Container | To arrange #Sidebar and #Main-Content horizontally -->
+        <div id="main-container" class="d-flex bg-primary">
 
-        <main>
-            <nav>
-                <div class="tasto debug"> 
-                    <div class="main-content debug">
-                        <button>Effettua l'upgrade</button>
+            <!-- Sidebar | Left Side -->
+            <nav id="sidebar" class="d-flex flex-col justify-between bg-black">
+
+                <!-- Sidebar Navigation Menu -->
+                <section id="sidebar-menu">
+                    <!-- Spotify Main Logo -->
+                    <div class="main-logo p-10">
+                        <!-- Logo X-Small -->
+                        <a href="#"><img src="images/logo-small.svg" alt="Main Logo Spotify"></a>
+                        <!-- Logo Medium -->
+                        <a href="#"><img src="images/logo.svg" alt="Main Logo Spotify"></a>
                     </div>
-                </div>
+                    <!-- Navigation -->
+                    <div class="navigation">
+                        <ul>
+                            <li class="p-10">
+                                <a href="#"><img src="images/home.svg" alt="Home"><span class="c-white px-10"> Home</span></a>
+                            </li>
+                            <li class="p-10">
+                                <a href="#"><img src="images/search.svg" alt="Cerca"><span class="px-10"> Cerca</span></a>
+                            </li>
+                            <li class="p-10">
+                                <a href="#"><img src="images/libreria.svg" alt="La tua libreria"><span class="px-10"> La tua libreria</span></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- My Playlist List -->
+                    <div class="my-playlist py-20">
+                        <ul>
+                            <!-- Title -->
+                            <li class="p-10">
+                                <h4 class="uppercase">Playlist</h4>
+                            </li>
+                            <!-- Create New Playlist -->
+                            <li class="new-playlist p-10">
+                                <a href="#">
+                                <i class="fa-solid fa-square-plus fa-2x"></i>
+                                <span class="px-10">Crea Playlist</span>
+                                </a>
+                            </li>
+                            <!-- Playlist List -->
+                            <li class="p-10"><a href="#">Nome Playlist</a></li>
+                            <li class="p-10"><a href="#">Nome Playlist</a></li>
+                            <li class="p-10"><a href="#">Nome Playlist</a></li>
+                            <li class="p-10"><a href="#">Nome Playlist</a></li>
+                            <li class="p-10"><a href="#">Nome Playlist</a></li>
+                            <li class="p-10"><a href="#">Nome Playlist</a></li>
+                            <li class="p-10"><a href="#">Nome Playlist</a></li>
+                        </ul>
+                    </div>
+
+                </section>
+
+                <!-- Profile Settings -->
+                <section id="profile-settings" class="px-10">
+                    <!-- Install App -->
+                    <div class="install-app t-center py-10">
+                        <a href="#"><i class="fa-regular fa-circle-down"></i><span class="px-10">Installa app</span></a>
+                    </div>
+                    <!-- User Profile -->
+                    <div class="profile py-10">
+                        <a class="d-flex align-center" href="#">
+                            <img class="br-50" src="images/profile.svg" alt="John Doe">
+                            <span class="px-10"><h4>John Doe</h4></span>
+                        </a>
+                    </div>
+                </section>
             </nav>
-                <div id="album debug"> 
-                    
-                    <section class="debug" >
-                       
-                        <section class="wrapper">
-        
-                            <div class="row"> 
-                                <!-- menu top -->
-                                <ul class="debug">
-                                    <li><a href="#">In evidenza</a></li>
-                                    <li><a href="#">Podcast</a></li>
-                                    <li><a href="#">Classifiche</a></li>
-                                    <li><a href="#">Generi e mood</a></li>
-                                    <li><a href="#">Nuove uscite</a></li>
-                                    <li><a href="#">Scropri</a></li>
-                                </ul>
-                                <!-- /menu top -->
-                                
-                                <h2>Recently played</h2>
-                            <div class="box">
-                                <div> 
-                                    <img src="img/metal_lifting.jpg" alt="">
-                                    <h4>Heavy Metal</h4>
-                                    <h6>Subtitle</h6>
-                                </div>
-                                <div>
-                                    <img src="img/metal_lifting.jpg" alt="">
-                                    <h4>Heavy Metal</h4>
-                                    <h6>Subtitle</h6>
-                                </div>
-                                <div>
-                                    <img src="img/metal_lifting.jpg" alt="">
-                                    <h4>Heavy Metal</h4>
-                                    <h6>Subtitle</h6>
-                                </div>
-                                <div>
-                                    <img src="img/metal_lifting.jpg" alt="">
-                                    <h4>Heavy Metal</h4>
-                                    <h6>Subtitle</h6>
-                                </div>
-                                <div>
-                                    <img src="img/metal_lifting.jpg" alt="">
-                                    <h4>Heavy Metal</h4>
-                                    <h6>Subtitle</h6>
-                                </div>
-                                <div>
-                                    <img src="img/metal_lifting.jpg" alt="">
-                                    <h4>Heavy Metal</h4>
-                                    <h6>Subtitle</h6>
-                                </div>
-                        </section>
 
-                        <section class="wrapper debug">
-                            <div class="row"> 
-                                <h2>Recently played</h2>
-                            <div class="box-due">
-                                <div> 
-                                    <img src="img/metal_lifting.jpg" alt="">
-                                    <h4>Heavy Metal</h4>
-                                    <h6>Subtitle</h6>
-                                </div>
-                                <div>
-                                    <img src="img/metal_lifting.jpg" alt="">
-                                    <h4>Heavy Metal</h4>
-                                    <h6>Subtitle</h6>
-                                </div>
-                        </section>
+            <!-- Main Content Box | Right Side -->
+            <div id="main-content" class="w-100">
 
-                        <section class="wrapper debug">
-                            <div class="row"> 
-                                <h2>Recently played</h2>
-                            <div class="box-due">
-                                <div> 
-                                    <img src="img/metal_lifting.jpg" alt="">
-                                    <h4>Heavy Metal</h4>
-                                    <h6>Subtitle</h6>
-                                </div>
-                                <div>
-                                    <img src="img/metal_lifting.jpg" alt="">
-                                    <h4>Heavy Metal</h4>
-                                    <h6>Subtitle</h6>
-                                </div>
-                        </section>
+                <!-- Header of Main Content Box | Main Navbar + Upgrade Box -->
+                <header>
+                    <!-- Upgrade Box | Fixed -->
+                    <div id="upgrade-box" class="d-flex flex-row-rev align-center p-20 bg-black">
+                        <a href="#" class="upgrade-btn uppercase">Effettua l'upgrade</a>
+                    </div>
+                    <!-- navbar -->
+                    <nav id="main-navbar" class="p-10">
+                        <ul class="d-flex flex-wrap justify-center font-xs uppercase">
+                            <li class="p-10"><a href="#">In evidenza</a></li>
+                            <li class="p-10"><a href="#">Podcast</a></li>
+                            <li class="p-10"><a href="#">Classifiche</a></li>
+                            <li class="p-10"><a href="#">Generi e Mood</a></li>
+                            <li class="p-10"><a href="#">Nuove Uscite</a></li>
+                            <li class="p-10"><a href="#">Scopri</a></li>
+                        </ul>
+                    </nav>
+                </header>
+                <!-- Content of Main Content Box | Tracks & Playlists Sections -->
+                <div id="content-container" class="px-10">
 
-                        
-                    </section>
-                </div>
-        </main> 
-    </div>
-    <footer>
-        <div class="left-player-bar debug">
-            <div>
-                <img src="img/sinister.jpeg" alt="brano in esecuzione">
-            </div>
-            <div id="text-player-bar">
-                <span>Sinister</span>
-                <span>Brano Nome</span>
-            </div>
-            <div>
-                <span id="icon-eft-player-bar">
-
-                </span>
-            </div>
-        </div>
-        
-        <div class="player-bar debug">
-            <div id="player-bar-top">
-                <div class="icon-footer debug">
-                    <i style="font-size: 24px;" class="fa">&#xf074;</i>
-                    <i style="font-size: 24px;" class="fa debug">&#xf048;</i>
-                    <i style="font-size: 24px;" class="fa">&#xf01d;</i>
-                    <i style="font-size: 24px;" class="fa">&#xf051;</i>
-                    <i style="font-size: 24px;" class="fa">&#xf01e;</i>
-                </div>
-                <li>
-                    <div class="audio-player debug">
-                       
-                        <div id="seekContainer">
-                            <div id="timeline1">
-                                <div id="seek" class="playhead" style="margin-left: 0px;">
-                                    <div id="cursor"></div>
-                                </div> 
+                    <!-- Recently Played Section -->
+                    <section id="recently-played" class="py-20">
+                        <!-- Title -->
+                        <h2>Recently played</h2>
+                        <!-- Recently Played Track List -->
+                        <div class="row d-flex flex-wrap py-10">
+                            <!-- Single Track -->
+                            <div class="col t-center py-10">
+                                <figure>
+                                    <img class="w-100" src="images/metal_lifting.jpg" alt="Heavy Metal">
+                                    <i class="c-white fa-regular fa-circle-play fa-5x"></i>
+                                </figure>
+                                <h3>Heavy Metal</h3>
+                                <h5>Subtitle</h5>
+                            </div>
+                            <!-- Single Track -->
+                            <div class="col t-center py-10">
+                                <figure>
+                                    <img class="w-100" src="images/stranger.jpeg" alt="Stranger Things Volume 1 Soundtrack">
+                                    <i class="c-white fa-regular fa-circle-play fa-5x"></i>
+                                </figure>
+                                <h3>Stranger Things, Vol.1 (a Netflix Original Series Soundtrack)</h3>
+                                <h5>Kyle Dixon & Michael Stein</h5>
+                            </div>
+                            <!-- Single Track -->
+                            <div class="col t-center py-10">
+                                <figure>
+                                    <img class="w-100" src="images/aquietplace.jpeg" alt="A Quiet Place">
+                                    <i class="c-white fa-regular fa-circle-play fa-5x"></i>
+                                </figure>
+                                <h3>A quiet place</h3>
+                                <h5>Subtitle</h5>
+                            </div>
+                            <!-- Single Track -->
+                            <div class="col t-center py-10">
+                                <figure>
+                                    <img class="w-100" src="images/split.jpeg" alt="Split">
+                                    <i class="c-white fa-regular fa-circle-play fa-5x"></i>
+                                </figure>
+                                <h3>Split</h3>
+                                <h5>Subtitle</h5>
+                            </div>
+                            <!-- Single Track -->
+                            <div class="col t-center py-10">
+                                <figure>
+                                    <img class="w-100" src="images/cure.jpeg" alt="A cure for wellness">
+                                    <i class="c-white fa-regular fa-circle-play fa-5x"></i>
+                                </figure>
+                                <h3>A cure for wellness</h3>
+                                <h5>Subtitle</h5>
+                            </div>
+                            <!-- Single Track -->
+                            <div class="col t-center py-10">
+                                <figure>
+                                    <img class="w-100" src="images/sinister.jpeg" alt="Sinister">
+                                    <i class="c-white fa-regular fa-circle-play fa-5x"></i>
+                                </figure>
+                                <h3>Sinister</h3>
+                                <h5>Subtitle</h5>
                             </div>
                         </div>
-                    </div>
-                </li>
-            </div>
-            <!-- /player-bar -->
-        </div>
-        <div class="right-player-bar debug">   
-            contenuto
-        </div>
-    </footer>
-</div>   
-                       
-        
-                        
-                                
-                               
-                       
-                                
-        
-        
-        
-                                
-                           
-                        
-                       
+                    </section>
                     
-    </body>
+                    <!-- Suggestions Playlist Mix Section -->
+                    <section id="suggestions" class="py-20">
+                        <!-- Title & Subtitle-->
+                        <h2>Creato per John Doe</h2>
+                        <h5>Più ascolti, più accurati saranno i suggerimenti.</h5>
+                        <!-- Suggestions Playlist List -->
+                        <div class="row d-flex flex-wrap py-10">
+                            <!-- Single Playlist -->
+                            <div class="col t-center py-10">
+                                <figure>
+                                    <img class="w-100" src="images/radar.jpeg" alt="Release Radar">
+                                    <i class="c-white fa-regular fa-circle-play fa-5x"></i>
+                                </figure>
+                                <h3>Release Radar</h3>
+                            </div>
+                            <!-- Single Playlist -->
+                            <div class="col t-center py-10">
+                                <figure>
+                                    <img class="w-100" src="images/mixdaily.jpeg" alt="Daily Mix 1">
+                                    <i class="c-white fa-regular fa-circle-play fa-5x"></i>
+                                </figure>
+                                <h3>Daily Mix 1</h3>
+                            </div>
+                        </div>
+                    </section>
+                    
+                    <!-- Most Popular Artists Section -->
+                    <section id="popular-artists" class="py-20">
+                        <!-- Title & Subtitle-->
+                        <h2>Artisti più popolari</h2>
+                        <h5>Più ascolti, più accurati saranno i suggerimenti.</h5>
+                        <!-- Popular Artists List -->
+                        <div class="row d-flex flex-wrap py-10">
+                            <!-- Single Artist -->
+                            <div class="col t-center py-10">
+                                <figure>
+                                    <img class="w-100 br-50" src="images/youg.jpeg" alt="Lana del Rey">
+                                    <i class="c-white fa-regular fa-circle-play fa-5x"></i>
+                                </figure>
+                                <h3>Lana del Rey</h3>
+                            </div>
+                            <!-- Single Artist -->
+                            <div class="col t-center py-10">
+                                <figure>
+                                    <img class="w-100 br-50" src="images/einaudi.jpeg" alt="Ludovico Einaudi">
+                                    <i class="c-white fa-regular fa-circle-play fa-5x"></i>
+                                </figure>
+                                <h3>Ludovico Einaudi</h3>
+                            </div>
+                        </div>
+                    </section>
+
+                </div>
+                
+            </div>
+        </div>
+    </main>
+        
+    <!-- Main Footer | Bottom Side -->
+    <footer id="main-footer" class="bg-secondary">
+
+        <!-- Spotify Player -->
+        <section id="player" class="d-flex justify-between h-100 p-10">
+
+            <!-- Now Playing | Left Col -->
+            <div id="now-playing" class="d-flex justify-between align-center">
+                <!-- Track Album Cover -->
+                <div class="album-cover t-center">
+                    <img class="w-100 h-100" src="images/sinister.jpeg" alt="Sinister">
+                </div>
+                <!-- Track Name -->
+                <div class="track-name px-10">
+                    <h3>Sinister</h3>
+                    <span class="font-xs">Brano Nome</span>
+                </div>
+                <!-- Track Actions -->
+                <div class="track-actions h-100 d-flex flex-col flex-wrap justify-around align-center t-center font-xs">
+                    <a href="#" class="px-10 fa-regular fa-heart"></a>
+                    <a href="#" class="px-10 fa-regular fa-folder"></a>
+                </div>
+            </div>
+            
+            <!-- Track Controls | Middle Col -->
+            <div id="track-controls" class="d-flex flex-col flex-wrap content-center align-center w-50">
+                <!-- Track Buttons -->
+                <div class="track-btn w-100 h-50 d-flex justify-center align-center">
+                    <a href="#" class="c-white px-10 fa-solid fa-shuffle"></a>
+                    <a href="#" class="c-white px-10 fa-solid fa-backward-step"></a>
+                    <a href="#" class="c-white px-10 fa-solid fa-circle-play"></a>
+                    <a href="#" class="c-white px-10 fa-solid fa-forward-step"></a>
+                    <a href="#" class="c-white px-10 fa-solid fa-rotate-right"></a>
+                </div>
+                <!-- Track Progress Bar -->
+                <div class="progress-bar w-100 h-50 d-flex align-center justify-between">
+                    <span class="progress-time c-white t-center font-xs px-10">0:25</span>
+                    <div class="bar w-100"></div>
+                    <span class="total-time c-white t-center font-xs px-10">4:35</span>
+                </div>
+            </div>
+            
+            <!-- Player Controls | Right Col -->
+            <div id="player-controls" class="d-flex justify-between">
+                <!-- Controls Buttons -->
+                <div class="player-btn d-flex justify-between align-center font-xs">
+                    <a href="#" class="px-10 c-white fa-solid fa-list"></a>
+                    <a href="#" class="px-10 c-white fa-solid fa-display"></a>
+                </div>
+                <!-- Volume Bar -->
+                <div class="volume-bar w-100 d-flex align-center justify-between">
+                    <a href="#" class="px-10 c-white fa-solid fa-volume-high"></a>
+                    <div class="bar w-100"></div>
+                </div>
+            </div>
+        </section>
+    </footer>
+
+</body>
 </html>
-
-
-
-                            
-                           
-                                    <!-- <h2>Creato per John Doe</h2>
-                                    <div>Più ascolti, più accurati saranno i suggerimenti.</div> --><!--                       
-                                    <h2>Artisti più popolari</h2> 
-                                    <div>Più ascolti, più accurati saranno i suggerimenti.</div> -->
